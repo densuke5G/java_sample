@@ -4,20 +4,23 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Sample0803 {
+public class Sample0805 {
 
 	public static void main(String[] args) throws IOException {
 		System.out.println("整数を入力してください");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		String str = reader.readLine();
-		int res = Integer.parseInt(str);
+		int num = Integer.parseInt(str);
 
-		if (res > 4) {
-			if (res <= 10) {
-				System.out.println(res + "は4より大きく10以下");
-			}
+		if (num == 4) {
+			System.out.println("4が入力されました");
+		} else if (num == 7) {
+			System.out.println("7が入力されました");
+
+		} else {
+			System.out.println("4と7以外の数字が入力されました");
 		}
-		System.out.println("終了します");
 	}
+
 }
