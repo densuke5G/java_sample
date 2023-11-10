@@ -18,7 +18,7 @@ public class Sample0908v {
 		
 		while (buyflag == 0) {
 			i++;
-			System.out.println("1つ増やしますか？");
+			System.out.println("購入個数:"+ i + " 1つ増やしますか？");
 			System.out.print("はい：0、いいえ：1＞");
 			choice = reader.readLine();
 			buyflag = Integer.parseInt(choice);
