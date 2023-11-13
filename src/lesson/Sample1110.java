@@ -50,18 +50,23 @@ public class Sample1110 {
 		// Q06. ageが16、18、20、それ以外の時、
 		// それぞれ「二輪免許可」「成年」「飲酒可」「それ以外」表示するswitch文
 		switch (age) {
-		case 16:
+		case 16: {
 			System.out.println("二輪免許可");
 			break;
-		case 18:
+		}
+		case 18: {
 			System.out.println("成年");
 			break;
-		case 20:
+		}
+		case 20: {
 			System.out.println("飲酒可");
 			break;
+		}
 		default:
 			System.out.println("それ以外");
-			//			9分28秒 7分50秒
 		}
+		//			9分28秒 7分50秒　7分14秒
+		
+		
 	}
 }
